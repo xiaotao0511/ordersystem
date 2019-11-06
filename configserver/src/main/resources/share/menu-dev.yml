@@ -1,0 +1,19 @@
+server:
+  port: 8020
+spring:
+  application:
+    name: menu
+  datasource:
+    name: orderingsystem
+    url: jdbc:mysql://10.86.23.186/orderingsystem?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: uits_test
+    password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+mybatis:
+  mapper-locations: classpath:/mapping/*.xml
+  type-aliases-package: com.lxt.entity
