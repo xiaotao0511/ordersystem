@@ -17,3 +17,6 @@ eureka:
 mybatis:
   mapper-locations: classpath:/mapping/*.xml
   type-aliases-package: com.lxt.entity
+logging:
+  level:
+    com.lxt.repository: DEBUG
